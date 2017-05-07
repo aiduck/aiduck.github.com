@@ -1,0 +1,108 @@
+/*overelement*/
+body,div{
+  padding: 0px;
+  margin: 0px;
+}
+
+#clearDiv{
+	clear: both;
+}
+/*start containerDiv*/
+#containerDiv{
+	margin: 0 auto;
+	width: 1000px;
+	height: 750px;
+	background-color: #fff;
+}
+/*end  containerDiv*/
+
+/*start banner*/
+#bannerDiv{
+   width: 100%;
+   height: 100px;
+   background-color: #bbb;
+   margin-top: 8px;
+}
+/*end banner*/
+
+/*start navigation*/
+#navigationDiv{
+   width: 100%;
+   height: 50px;
+   background-color: #aaa;
+}
+/*end navigation*/
+
+/*start focus*/
+#focusDiv{
+	width: 100%;
+	height: 200px;
+	background-color: #eee;
+	margin-top: 8px;
+}
+#leftDiv{
+	width: 59%;
+	height: 90%;
+	background-color: #222;
+	float: left;
+	position: relative;
+	top:10px;
+	left: 5px;
+}
+
+#rightDiv{
+	width: 39%;
+	height: 90%;
+	background-color: #888;
+	float: right;
+	position: relative;
+	top:10px;
+	right: 5px;
+}
+/*end focus*/
+
+/*start content*/
+#contentDiv{
+   width: 100%;
+   height: 180px;
+   background-color: #aaa;
+   margin-top: 8px;
+}
+#content1{
+	width: 30%;
+	height: 90%;
+	background-color: #555;
+	float: left;
+	position: relative;
+	top:8px;
+	margin-left: 25px;
+}
+#content2{
+	width: 30%;
+	height: 90%;
+	background-color: #555;
+	float: left;
+	position: relative;
+	top:8px;
+	margin-left: 25px;
+}
+
+#content3{
+	width: 30%;
+	height: 90%;
+	background-color: #555;
+	float: left;
+	position: relative;
+	top:8px;
+	margin-left: 25px;
+}
+/*end content*/
+
+/*start footer*/
+#footerDiv{
+   width: 100%;
+   height: 20px;
+   background-color: #111;
+   margin-top: 8px;
+}
+/*end footer*/

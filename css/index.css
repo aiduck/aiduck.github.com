@@ -1,0 +1,110 @@
+#top {
+  width: 1000px;
+  height: 300px;
+  background-color: #33ccff;
+  position: relative;
+}
+#p1 {
+	font-size: 40px;
+  text-align: center;
+  line-height: 20px;
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+#p3 {
+	margin: 0px;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	left: 220px;
+}
+#p4 {
+  margin: 20px;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+#p5 {
+  margin: 20px;
+  font-size: 30px;
+  position: absolute;
+  top: 80px;
+  left: 200px;
+}
+#p6 {
+  margin: 20px;
+  font-size: 30px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+}
+#p7 {
+  margin: 20px;
+  font-size: 30px;
+  position: absolute;
+  top: 155px;
+  left: 200px;
+}
+
+#p9 {
+  margin: 20px;
+  font-size: 30px;
+  position: absolute;
+  top: 190px;
+  left: 200px;
+}
+
+
+#a3 {
+	font-size: 30px;	
+	position: absolute;
+	top: 23px;
+	left: 330px;
+}
+#a4 {
+  font-size: 30px;  
+  position: absolute;
+  top: 64px;
+  left: 330px;
+}
+#a5 {
+  font-size: 30px;  
+  position: absolute;
+  top: 104px;
+  left: 330px;
+}
+#a6 {
+  font-size: 30px;  
+  position: absolute;
+  top: 141px;
+  left: 330px;
+}
+#a7 {
+  font-size: 30px;  
+  position: absolute;
+  top: 180px;
+  left: 330px;
+}
+
+#a9 {
+  font-size: 30px;  
+  position: absolute;
+  top: 212px;
+  left: 330px;
+}
+/* end of top */
+#middle {
+  width: 1000px;
+  height: 300px;
+  background-color: #77ddff;
+  position: relative;
+}
+/* end of middle */
+#bottom {
+  width: 1000px;
+  height: 300px;
+  background-color: #cceeff;
+  position: relative;
+}

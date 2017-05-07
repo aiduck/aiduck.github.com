@@ -1,0 +1,16 @@
+疑问是在，最下面一块div中的文字定位是不一样的？？？（老师这个原因是为什么）
+.text1 {
+	position: absolute;
+	top: 32px;
+	left: 130px;
+}
+.text2 {
+	position: absolute;
+	top: 34px;
+	left: 191px;
+}
+.text3 {
+	position: absolute;
+	top:32px;
+	left: 253px;
+}

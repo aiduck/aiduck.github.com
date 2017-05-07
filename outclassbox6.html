@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>outclassbox6</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link href="css/outclassbox6.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head> 
+<body>
+<!-- 属性操作 -->
+<!-- checked selected disabled >>prop and removeprop-->
+<!-- others >> attr and removeattr-->
+<hr/>
+1:
+<br/>
+<img src="img/smile/smile_1.jpg"/>
+<br/>
+<button class="button orange small">设置图像的 width 属性</button>
+<button class="button orange small">设置图像的 src  属性</button>
+<button class="button orange small">超过两个属性</button>
+
+<hr/>
+2:
+<br/>
+smile1:<input type="checkbox" checked>
+smile2:<input type="checkbox" disabled>
+smile3<input type="checkbox" disabled>
+smile4<input type="checkbox" disabled>
+<input type="button" class="button orange small">
+<input type="button" class="button orange small">
+<input type="button" class="button orange small">
+<input type="button" class="button orange small">
+
+<!-- 样式操作 -->
+<!-- addClass() 移除一个类
+     removeClass() 添加一个新的类。
+     toggleClass() 对设置或移除被选元素的一个或多个类进行切换。 
+     css()
+-->
+<hr/>
+3:
+<br/>
+<h1>This is a heading</h1>
+<p class="intro">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button>改变第一个段落的类</button>
+<button class="btn1">切换段落的 "main" 类</button>
+<button >改变段落的样式</button>
+<br/>
+<img src="img/smile/smile_1.jpg"/>
+<!-- 内容操作 -->
+<!-- html text val different -->
+<!-- html()
+
+    取得第一个匹配元素的 html文本(可包含html标签)
+
+    设置匹配元素的 html文本(可包含html标签)
+
+text()
+
+    取得第一个匹配元素的 纯文本(不包含html标签)
+
+    设置匹配元素的文本(当文本中出现html标签时，将处理为字符实体,也就是作为文本而不作为标签)
+
+val()
+
+    一般针对input标签通过value属性获取和设置值。
+
+    设置匹配元素的value值
+
+    获取第一个匹配元素input标签value值,若未设置则返回当前值 -->
+<hr/>
+4:
+<br/>
+<table border="1" bordercolor="#A9A9A9" cellspacing="0">
+
+    <tr>
+      <td>******************************</td>
+      <td>*******************************************</td>
+    </tr>
+    <tr>
+      <td>
+        <div id="divShow">
+          <b><i>Write Less Do More</i></b>
+        </div>
+      </td>
+      <td>这是原内容</td>
+    </tr>
+    <tr>
+      <td>
+        <div id="divShow">
+          <b><i>Write XXXX Do XXXX</i></b>
+        </div>
+      </td>
+      <td>这是原内容</td>
+    </tr>
+    <tr>
+      <td>******************************</td>
+      <td>*******************************************</td>
+    </tr>
+    <tr>
+      <td><div id="divHTML">1</div></td>
+      <td>获取原内容(连带内容的格式)后以html方式输出</td>
+    </tr>
+    <tr>
+      <td><div id="divHTML2">2</div></td>
+      <td>获取原内容(不带内容的格式)后以html方式输出</td>
+    </tr>
+    <tr>
+      <td><div id="divHTML3">3</div></td>
+      <td>获取原内容(获取第一个匹配元素的内容)后以html方式输出</td>
+    </tr>
+    <tr>
+      <td><p></p></td>
+      <td>HTML方式设置段落的文本</td>
+    </tr>
+    <tr>
+      <td><p></p></td>
+      <td>如果这个也有内容了，就是设置每个匹配元素的内容</td>
+    </tr>
+    <tr>
+      <td>******************************</td>
+      <td>*******************************************</td>
+    </tr>
+    <tr>
+      <td><div id="divText">4</div></td>
+      <td>获取原内容后以text方式输出</td>
+    </tr>
+    <tr>
+      <td><div id="divText2"></div></td>
+      <td>获取原内容(获取所有匹配元素的内容)后以text方式输出</td>
+    </tr>
+    <tr>
+      <td><a></a></td>
+      <td>TEXT方式设置段落的文本</td>
+    </tr>
+    <tr>
+      <td><a></a></td>
+      <td>如果这个也有内容了，就是设置每个匹配元素的内容</td>
+    </tr>
+    <tr>
+      <td>******************************</td>
+      <td>*******************************************</td>
+    </tr>
+    <tr>
+    <td>
+    <select multiple="multiple"style="height:96px;width:85px">
+       <option value="1">Item 1</option>
+       <option value="2">Item 2</option>
+       <option value="3">Item 3</option>
+       <option value="4">Item 4</option>
+       <option value="5">Item 5</option>
+       <option value="6">Item 6</option>
+    </select>
+    <select>
+
+       <option value="7">Item 7</option>
+       <option value="8">Item 8</option>
+       <option value="9" selected>Item 9</option>
+    </select>
+    </td>
+    <td></td>
+    </tr>
+    <tr>
+      <td><input ></input></td>
+      <td><input ></input></td>
+    </tr>
+</table>
+
+
+</body>
+<script type="text/javascript" src="../js/outclassbox6.js"></script>
+</html>

@@ -1,0 +1,10 @@
+#tb {
+   width: 1000px;
+   height: 100px;
+  
+}
+#tb td{
+	width: 25%;
+	border: 2px solid black;
+}
+

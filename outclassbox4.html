@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>outclassbox4</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link href="css/outclassbox4.css" rel="stylesheet" type="text/css">
+
+</head> 
+
+<body>
+1:faile
+<input type="button" class="button blue" value="window" onclick="window()"/>
+<input type="button" class="button blue small" value="window_open" onclick="window_open()"/>
+<input type="button" class="button blue small" value="window_move" onclick="window_move()"/>
+<input type="button" class="button blue small" value="window_stop" onclick="window_stop()"/>
+<input type="button" class="button blue small" value="window_close" onclick="window_close()"/>
+</br>
+</br>
+</br>
+2:in document is succeed
+<form name="myform" action="http://itshixun.com" method="post" onsubmit="return checkForm()">
+	user:<input type="text" name="username" id="username"/></br>
+	password:<input type="password" name="userpwd" id="userpwd"/></br>
+	email:<input type="text" name="email" id="email"/></br>
+	mobilephone:<input type="text" name="mobilephone" id="mobilephone"/></br>
+    <input type="submit" value="submit"/>
+    <input type="button" value="button" onclick="checkForml()"/>
+</form>
+</br>
+</br>
+</br>
+3:in document is succeed
+<table id="mytable" border="1" width="200">
+	<tr>
+		<th>id</th>
+		<th>name</th>
+		<th>delete</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>aaa</td>
+		<td><input type="button" value="delete" onclick="deleteRow(this)"></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>bbb</td>
+		<td><input type="button" value="delete" onclick="deleteRow(this)"></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>ccc</td>
+		<td><input type="button" value="delete" onclick="deleteRow(this)"></td>
+	</tr>
+</table>
+ID:<input type="text" id="userid"/></br>
+Name:<input type="text" id="userName"/></br>
+<input type="button" value="unshift" onclick="insertstart()">
+<input type="button" value="push" onclick="insertend()">
+<input type="button" value="hidden_caption" onclick="removecaption()">
+<input type="button" value="add_caption" onclick="appendcaption()">
+
+
+
+</br>
+</br>
+</br>
+4:in document is succeed
+<table id="mytable" border="1" width="200">
+	<tr>
+		<th>id</th>
+		<th>name</th>
+		<th>salary</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>aaa</td>
+		<td>3000</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>bbb</td>
+		<td>2600</td>
+	</tr>
+
+	<tr>
+		<td>sum</td>
+		<td colspan="2">0.0</td>
+	</tr>
+</table>
+</br>
+<input type="button" value="sum" onclick="amount()"/>
+
+</body>
+<script type="text/javascript" src="../js/outclassbox4.js"></script>
+</html>

@@ -1,0 +1,66 @@
+/* table1 */
+#t1{
+	width: 1000px;
+	height: 200px;
+	background:#ccc ;
+}
+#t1 td{
+	width: 25%;
+}
+.t1t1{
+	border-right: 1px dotted black;
+	width: 200px;
+	height: 100px;
+	font-size: 18px;
+}
+
+/* t2 */
+#t2{
+	width: 1000px;
+	height: 200px;
+	background:#aaa ;
+}
+#t2 td{
+	width: 50%;
+}
+.t2t1{
+	width: 100%;
+}
+
+#t2t1 .t2left{
+	width: 20%;
+
+}
+#t2t1 .t2right{
+	width: 80%;
+	font-size: 22px;
+	font-weight: bold;
+}
+span{
+	font-size: 18px;
+	font-weight: normal;
+}
+/* t3 */
+#t3{
+	width: 1000px;
+	height: 400px;
+	background:#ccc ;
+}
+#t3 .tleft{
+	width: 40%;
+}
+#t3 .tright{
+	width: 60%;
+}
+.t3t1{
+	height: 30%;
+	font-size: 28px;
+	font-weight: bold;	
+}
+.t3t2{
+	height: 30%;	
+}
+.t3t3{
+	height: 30%;	
+}
+

@@ -1,0 +1,523 @@
+/*alice*/
+@font-face {
+    font-family: "rei";
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot"); /* IE9*/
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("https://i.alipayobjects.com/common/fonts/rei.woff") format("woff"), /* chrome 6+ãfirefox 3.6+ãSafari5.1+ãOpera 11+ */
+         url("https://i.alipayobjects.com/common/fonts/rei.ttf")  format("truetype"), /* chromeãfirefoxãoperaãSafari, Android, iOS 4.2+*/
+         url("https://i.alipayobjects.com/common/fonts/rei.svg#rei") format("svg"); /*  iOS 4.1- */
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    color:#000;
+    background:#fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* åå¤è¾¹è·éå¸¸è®©åä¸ªæµè§å¨æ ·å¼çè¡¨ç°ä½ç½®ä¸å */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,
+blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    
+    margin:0;padding:0;
+}
+
+/* éè®¾ HTML5 æ ç­¾, IE éè¦å¨ js ä¸­ createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+/* HTML5 åªä½æä»¶è· img ä¿æä¸è´ */
+audio,canvas,video {
+    display: inline-block;
+    *display: inline;
+    /*zoom:1;å±æ§æ¯IEæµè§å¨çä¸æå±æ§ï¼Firefoxç­å¶å®æµè§å¨ä¸æ¯æã
+    å®å¯ä»¥è®¾ç½®ææ£ç´¢å¯¹è±¡çç¼©æ¾æ¯ä¾ãé¤æ­¤ä¹å¤ï¼å®è¿æå¶ä»ä¸äºå°ä½ç¨ï¼
+    æ¯å¦è§¦åieçhasLayoutå±æ§ï¼æ¸é¤æµ®å¨ãæ¸é¤marginçéå ç­ã*/
+    *zoom: 1;
+}
+
+/* è¦æ³¨æè¡¨ååç´ å¹¶ä¸ç»§æ¿ç¶çº§ font çé®é¢ */
+body,button,input,select,textarea {
+    font:12px/1.5 tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+}
+input,select,textarea {
+    font-size:100%;
+}
+
+/* å»æåTable  cell çè¾¹è·å¹¶è®©å¶è¾¹éå */
+table {
+    /*separate  é»è®¤å¼ãè¾¹æ¡ä¼è¢«åå¼*/
+    /*collapse è¾¹æ¡ä¼åå¹¶ä¸ºä¸ä¸ªåä¸çè¾¹æ¡ã*/
+    /* inheritè§å®åºè¯¥ä»ç¶åç´ ç»§æ¿ border-collapse å±æ§çå¼ã*/
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* IE bug fixed: th ä¸ç»§æ¿ text-align*/
+th {
+    text-align:inherit;
+}
+
+/* å»é¤é»è®¤è¾¹æ¡ */
+fieldset,img {
+    border:0;
+}
+
+/* ie6 7 8(q) bug æ¾ç¤ºä¸ºè¡åè¡¨ç° */
+iframe {
+    display:block;
+}
+
+/* å»æ firefox ä¸æ­¤åç´ çè¾¹æ¡ */
+abbr,acronym {
+    border:0;
+    font-variant:normal;
+}
+
+/* ä¸è´ç del æ ·å¼ */
+del {
+    text-decoration:line-through;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+    font-style:normal;
+    font-weight:500;
+}
+
+/* å»æåè¡¨åçæ è¯, li ä¼ç»§æ¿ */
+ol,ul {
+    list-style:none;
+}
+
+/* å¯¹é½æ¯æçæéè¦çå ç´ , å«è®©ä»ä¹é½å±ä¸­ */
+caption,th {
+    text-align:left;
+}
+
+/* æ¥èªyahoo, è®©æ é¢é½èªå®ä¹, éåºå¤ä¸ªç³»ç»åºç¨ */
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:500;
+}
+
+q:before,q:after {
+    content:'';
+}
+
+/* ç»ä¸ä¸æ åä¸æ  */
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+body{
+    margin: 50px 0 0 50px;
+}
+.ui-grid-22 {
+	/*alice ui-grid-20*/
+	display: inline;
+	float: left;
+    /*h/w*/
+	width: 870px;   
+}
+
+/*<!-- 第1行 -->*/
+.ui-grid-row1 {
+     /*h/w*/
+	height: 120px;
+	/*alice  .iconfont*/
+	font-family: "rei";
+    font-style: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;	
+}
+.ui-grid-row1-up {
+     /*h/w*/
+	height: 25%;
+    /*font*/
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.up_left {
+	/*position*/
+	position: relative;
+     /*h/w*/
+    width: 14%;
+	height: 100%;
+    
+	/*alice .fn-linear-light*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#2d93cc), to(#1b88c4));
+    background: -moz-linear-gradient(top, #2d93cc, #1b88c4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d93cc', endColorstr='#1b88c4');
+    background:-o-linear-gradient(top, #2d93cc, #1b88c4);
+    background: linear-gradient(top, #2d93cc, #1b88c4);
+    
+    /*border_style*/
+	border-radius: 4px 4px 0px 0px;
+	/*font*/
+	line-height: 30px;
+	font-weight: 600;
+}
+.up_right {
+	/*position*/
+	position: relative;
+	top: -95%;
+	left: 15%;
+     /*h/w*/
+	width: 3%;
+	height: 80%;
+	/*alice .fn-linear-light*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#fc7917), to(#ff4002));
+    background: -moz-linear-gradient(top, #fc7917, #ff4002);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc7917', endColorstr='#ff4002');
+    background:-o-linear-gradient(top, #fc7917, #ff4002);
+    background: linear-gradient(top, #fc7917, #ff4002);
+    /*border_style*/
+	border-radius: 3px;
+	/*font*/
+	line-height: 24px;
+}
+.ui-grid-row1-middle {
+    /*h/w*/
+	height: 51%;
+	/*alice .fn-linear-light*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f3f3));
+    background: -moz-linear-gradient(top, #ffffff, #f2f3f3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f3f3');
+    background:-o-linear-gradient(top, #ffffff, #f2f3f3);
+    background: linear-gradient(top, #ffffff, #f2f3f3);
+    /*border_style*/
+	border: 2px solid #cecbce;
+	border-top: 4px solid #1b88c4;
+	/*font*/
+	font-size: 16px;
+}
+.ui-grid-row1-middle pre {
+	/*position*/
+ 	margin: 6px 0 3px 10px;
+ 	padding: 0;
+ 	/*font*/
+ 	color: #d70000;
+ 	word-spacing: 0.01px;
+
+}
+.ui-grid-row1-middle span {
+    /*font*/
+	font-weight: normal;
+	color: #444444;
+}
+.ui-grid-row1-down {
+	/*position*/
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+     /*h/w*/
+	height: 24%;
+	background-color: #fffbde;
+    /*border_style*/
+	border: 2px solid #cecbce;
+	border-top: none;
+}
+
+.ui-grid-row1-down i {
+    /*position*/
+  margin-right: 12px;
+  margin-left: 4px;
+  font-size: 15px;
+}
+.ui-grid-row1-down a {
+    /*position*/
+	margin-left: 6px;
+    /*font*/
+	font-weight: normal;
+	color: #002cbd;
+	text-decoration: underline;
+}
+/*CSS中的确是有vertical-align属性，
+但是它只对(X)HTML元素中拥有valign特性的元素才生效，
+例如表格元素中的<td>、<th>、<caption>等，
+而像<div>、<span>这样的元素是没有valign特性的，
+因此使用vertical-align对它们不起作用。 
+CSS网页布局DIV水平居中的各种方法 
+一、单行垂直居中 
+如果一个容器中只有一行文字，对它实现居中相对比较简单，
+我们只需要设置它的实际高度height和所在行的
+高度line-height相等即可。如：
+div {   
+  height:25px;   
+  line-height:25px;   
+  overflow:hidden;   
+}*/	
+
+/*<!-- 第2行 -->*/
+.ui-grid-row2 {
+	/*position*/
+	display: flex;
+    text-align: center;
+	margin: 13px 0 0 2px;
+    /*h/w*/
+    height: 20px;
+	/*alice  .iconfont*/
+	font-family: "rei";
+    font-style: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    /*font*/
+    background-color: #cedce8;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 15px;
+    color: #607a90;
+}
+.ui-grid-row2-cnt1 {
+	border-right: 2px solid #fff;
+	flex-grow: 10;
+}
+.ui-grid-row2-cnt2 {
+	border-right: 2px solid #fff;
+	flex-grow: 0.3;
+}
+.ui-grid-row2-cnt3 {
+	border-right: 2px solid #fff;
+	flex-grow: 1.2;
+}
+.ui-grid-row2-cnt4 {
+	border-right: 2px solid #fff;
+	flex-grow: 0.3;
+}
+.ui-grid-row2-cnt5 {
+	flex-grow: 1;
+}
+
+/*<!-- 第3行 -->*/
+.ui-grid-row3 {
+	display: flex;
+	align-items: center;
+	height: 55px;
+	border: 2px solid #bbbbbb;
+	border-top: 2px solid #ffffff;
+	background-color: #f2f2f2;
+}
+/*.ui-grid-row3  div {
+	position: relative;
+	float: left;
+	left: 100px;
+	width: 150px;
+}*/
+.ui-grid-row3  div {
+	display: flex;
+	align-items: center;
+	/*position*/
+	position: relative;
+	float: left;
+	height: 100%;
+}
+/*.ui-grid-row3 div img {
+	width: 30px;
+	height: 30px;
+}*/
+.ui-grid-row3 div img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding: 35px;
+	margin-left: 65px;
+	margin-right: -65px;
+}
+/*.ui-grid-row3 div i {
+	position
+	position: absolute;
+	top: 6px;
+}*/
+/*.ui-grid-row3 .txt {
+	
+    margin-top: -3px;
+	margin-left: 20px;
+
+	font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}*/
+ .ui-grid-row3 div .txt {
+	/*font*/
+	margin-left: 5px;
+	font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+/*.ui-grid-row3 div .fa-square {
+	width: 15px;
+	background: -moz-linear-gradient(top, #4ab9e6, #1081d1,#26a0d9);
+	color: rgba(0,0,0,0);
+	border: 1.5px solid #fff;
+}*/
+.ui-grid-row3 div .fa-square {
+	margin-left: 30px;
+	width: 15px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4ab9e6), to(#1081d1));
+    background: -moz-linear-gradient(top, #4ab9e6, #1081d1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ab9e6', endColorstr='#1081d1');
+    background:-o-linear-gradient(top, #4ab9e6, #1081d1);
+    background: linear-gradient(top, #4ab9e6, #1081d1);
+	color: rgba(0,0,0,0);
+	border: 2px solid #fff;
+}
+
+.ui-grid-row3-mid-txt {
+	margin-left: 312px;
+	font-size: 16px;
+}
+nav a {
+    position: relative;
+    top: -3px;
+    left: 85px;
+    font-size: 15px;
+	color: #002cbd;
+	text-decoration: underline;
+}
+
+/*<!-- 第4/5行 -->*/
+.ui-grid-row4_up {
+	/*position*/
+	display: flex;
+	height: 45px;
+	background-color: #ffffff;
+	/*alice  .iconfont*/
+	font-family: "rei";
+    font-style: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 15px;
+    color: #607a90;
+}
+.ui-grid-row4-cnt1 {
+	border-right: 2px solid #cdcdcd;
+	flex-basis: 400px;
+	flex-grow: 7.5;
+}
+.ui-grid-row4-cnt2 {
+	border-right: 2px solid #cdcdcd;
+	flex-basis: 60px;
+	flex-grow: 1;
+}
+.ui-grid-row4-cnt3 {
+	border-right: 2px solid #cdcdcd;
+	flex-basis: 70px;
+	flex-grow: 1.1;
+	/*font*/
+	line-height: 45px;
+	font-weight: bold;
+	color: black;
+}
+.ui-grid-row4-cnt4 {
+	border-right: 2px solid #cdcdcd;
+    flex-basis: 75px;
+    flex-grow: 1.2;
+	/*font*/
+	line-height: 15px;
+	padding: 8px 0;
+	color: black;
+}
+.ui-grid-row4-cnt5 {
+	flex-basis: 60px;
+	flex-grow: 1;
+	/*font*/
+	line-height: 45px;
+	color: black;
+}
+.ui-grid-row4-cnt1 pre {
+	position: relative;
+	margin: 3px 0;
+	width: 120px;
+	color: #000;
+}
+.ui-grid-row4-cnt1 i {
+	display: block;
+	margin: 0;
+	width: 20px;
+	/*position*/
+	position: relative;
+	top: -100%;
+	left: 25%;
+	color: #96c7d8;
+}
+.ui-grid-row4-cnt1 img {
+	display: block;
+	margin: 3px 0;
+	width: 60px;
+	height: 30px;
+	position: relative;
+	top: -200%;
+	left: 30%;	
+}
+.ui-grid-row4-cnt1 a {
+	display: block;
+	margin: 20px 0;
+	position: relative;
+	top: -300%;
+	left: 41%;
+	width: 180px;
+	color: #002cbd;
+	text-decoration: underline;
+}
+.ui-grid-row4_bottom {
+	display: flex;
+	align-items: center;
+	height: 55px;
+	background-color: #f2f2f2;
+	border: 2px solid #cdcdcd;
+}
+.ui-grid-row4_bottom div {
+	display: flex;
+	align-items: center;
+	/*position*/
+	position: relative;
+	float: left;
+	height: 55px;
+}
+.ui-grid-row4_bottom div pre {
+	width: 100px;
+	font-size: 15px;
+	color: #000;
+}
+.ui-grid-row4_bottom div img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding: 35px;
+	margin-left: 65px;
+	margin-right: -65px;
+}
+.ui-grid-row4_bottom div .fa-square-o {
+	margin-left: 30px;
+	color: #4ab9e6;
+}
+.ui-grid-row4_bottom div .fa-square {
+	margin-left: 30px;
+	margin-right: -6px;
+	width: 15px;
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#4ab9e6), to(#1081d1));
+    background: -moz-linear-gradient(top, #4ab9e6, #1081d1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ab9e6', endColorstr='#1081d1');
+    background:-o-linear-gradient(top, #4ab9e6, #1081d1);
+    background: linear-gradient(top, #4ab9e6, #1081d1);
+	color: rgba(0,0,0,0);
+	border: 2px solid #fff;
+}
+.ui-grid-row4_bottom .txt {
+	/*font*/
+	margin-left: 12px;
+	font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+

@@ -1,0 +1,81 @@
+.html {
+	/*display: flex;*/
+	width: 540px;
+    height: 460px;
+    background-color: #99bd90;
+    overflow: hidden;
+    font-family: serif,tahoma,arial;
+    text-indent: 10px;
+    /*position: absolute;*/
+    /*padding-top: 20px;*/
+    /*float: left*/
+}
+.ui-grid-topitem {
+	width: 390px;
+	height: 260px;
+	background-color: #fff;
+	border: 1px solid #0f0e0f; 
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.ui-grid-bottomitem {
+	display: flex;
+	width: 390px;
+	height: 115px;
+	background-color: #ffe6f4;
+	border: 1px solid #0f0e0f;
+	border-top: none; 
+	margin-left: 100px;
+	flex-direction: column;
+	align-items: center;
+}
+.ui-grid-bitem-scnt {
+	width: 370px;
+	height: 20px;
+	background-color: #fff;
+	border: 1px solid #0f0e0f; 
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 12px;
+    line-height: 20px;
+
+}
+
+.scnt-msg-font:after {
+	content: "具体信息";
+	color: #f72354;
+}
+.ui-grid-bitem-lcnt:before {
+	content: "¥";
+	font-weight: bold;
+	font-size: 14px;
+    font-style: normal;
+    padding-right: 4px;
+}
+.ui-grid-bitem-lcnt {
+	width: 370px;
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #0f0e0f;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 20px; 
+	line-height: 30px; 
+	color: #f70b42;
+}
+
+.ui-grid-bitem-lcnt-span:before {
+	content: "¥原价XX.00";
+	color: #5e5e5e;
+	text-decoration: line-through;
+	font-size: 10px;
+    font-style: normal;
+    padding-left: 4px;
+}
+.ui-grid-bitem-lcnt-span:after {
+	content: "XXX件已售";
+	color: #5e5e5e;
+	font-size: 10px;
+    font-style: normal;
+    padding-left: 125px;
+} 

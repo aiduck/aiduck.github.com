@@ -1,0 +1,27 @@
+.ui-grid-1 {
+	width: 80px;
+	height: 30px;
+	background: #fff;
+	border: 2px solid #4d4d4d;
+	border-bottom: none;
+	float: left;
+}
+.ui-grid {
+	border-left: none;
+}
+.ui-grid-active {
+	background-color: #c0c0c0;
+}
+.content {
+	position: relative;
+	top: 30px;
+	width: 600px;
+	height: 400px;
+	border: 2px solid #4d4d4d;
+}
+
+img {
+	position: absolute;
+	left: 280px;
+	top: 150px;
+}

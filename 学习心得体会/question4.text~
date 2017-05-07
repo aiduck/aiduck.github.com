@@ -1,0 +1,24 @@
+疑问：
+1）flex不能连续套用怎么解决？
+2）命名规则怎么练习？
+
+
+outclassbox4
+
+function window_stop(){
+	clearInterval(timer);
+}
+function window_close(){
+	mywindow.close();
+}
+//一直报错，在document中重新实现了
+function checkemail(){
+	var email = document.forms[0].email;
+	var emailReg = /^([a-zA-Z0-9_-]) + @([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+	if(!emailReg.test(email.value)){
+		alert("the email is wrong and put it again");
+		email.focus();
+		return false;
+	}
+	return true;
+}

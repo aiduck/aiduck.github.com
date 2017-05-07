@@ -1,0 +1,45 @@
+
+#ground_div {
+   width: 500px;
+   height: 200px;
+   background-color: #999;
+   position: relative;
+   margin: 50px;
+   z-index: -3;
+}
+#top_div {
+	width: 300px;
+	height: 100px;
+	background-color: #66cd00;
+	position: absolute;
+	top:50px;
+	left: 150px;
+	border-radius: 10px;
+	border: 2px solid #458b00;
+	z-index: -2;
+}
+.triangle:before{
+		content: "";  /*:before和:after必带技能，重要性为满5颗星*/
+        display: block;
+        position: absolute;  /*日常绝对定位*/
+        top:12px;
+        width: 0;
+        height: 0;
+        border:15px solid transparent;
+        left:-30px;
+        border-right: 15px solid #66cd00;
+        z-index: 0;
+}
+.triangle:after{
+		content: "";  /*:before和:after必带技能，重要性为满5颗星*/
+        display: block;
+        position: absolute;  /*日常绝对定位*/
+        top:11px;
+        width: 0;
+        height: 0;
+        border:16px solid transparent;
+        left:-34px;
+        border-right: 16px solid #458b00;
+        z-index: -1;
+}
+

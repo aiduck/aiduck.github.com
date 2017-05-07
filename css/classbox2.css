@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-03-11 13:51:17
+ * @version $Id$
+ */
+body,div {
+	margin:0px;
+	padding:0px;
+}
+#clearDiv {
+	clear: both;
+}
+/*start containerDiv*/
+#containerDiv {
+	width: 1060px;
+	height: 230px;
+	border:2px solid black;
+	background-color: #ccc;
+	position: relative;
+	top:10px;
+	left: 10px;
+}
+#content {
+	width: 200px;
+	height: 100px;
+	background-color: #333;
+	background-clip: content-box;
+	float: left;
+	position: relative;
+}
+
+#content1 {
+	width: 200px;
+	height: 200px;
+	background-color: #ccc;
+	background-clip: content-box;
+	float: left;
+	position: relative;
+}
+.content{
+	margin-top: 10px;
+	margin-left:10px; 
+}
+
+
+#containerDiv2 {
+	width: 1060px;
+	height: 640px;
+	margin-top: 20px;
+	border:2px solid black;
+	background-color: #fff;
+	position: relative;
+	top:10px;
+	left: 10px;
+}
+#big_content{
+	width: 410px;
+	height: 410px;
+	background-color: #ccc;
+	float: left;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+#small_content{
+	width: 200px;
+	height: 200px;
+	background-color: #ccc;
+	float: right;
+	position: relative;
+}
+.small_content{
+	margin-top: 10px;
+	margin-right:10px; 
+}
+
+#bottom_content{
+
+}
+/*end containerDiv*/
+
+
+
+

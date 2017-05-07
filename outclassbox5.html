@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>outclassbox5</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link href="css/outclassbox5.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head> 
+
+<body>
+1:<input type="button" class="button orange" value="hello world" />
+</br>
+</br>
+<hr/>
+2:<input type="button" class="button orange" value="hello student" />
+</br>
+</br>
+<hr/>
+3:<div id="mydiv">aaaaaaaaaaaaaaa</div>
+  <div class="classdiv">bbbbbb</div>
+  <div class="classdiv">bbbbbb</div>
+  <span class="classspan">cccccc</span>
+</br>
+<hr/>
+4:
+<!-- <label> 标签为 input 元素定义标注（标记）。
+label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+<label> 标签的 for 属性应当与相关元素的 id 属性相同。 -->
+<!-- 
+显式的联系：
+<label for="SSN">Social Security Number:</label>
+<input type="text" name="SocSecNum" id="SSN" />
+
+隐式的联系：
+<label>Date of Birth: <input type="text" name="DofB" /></label> -->
+<!-- name 是表单提交后，给后台处理程序区分不同的输入框。
+
+例如 name = '用户名' name=‘密码’，后台程序就会分别去处理用户名和密码。
+而 id 通常给前台程序，例如 Javascript，CSS，让它去为不同 id 的输入框设置不同的响应动作，风格样式等。但这些前台语言，有的时候也支持对 name 的识别。
+id 是不会提交给后台的，所以后台一定只能用 name 去识别。 -->
+<!-- 浏览器为了方便用户搞出来的
+如果你曾经在某个form表单中的name为x的input中填写了“abc”，并且用form的原生submit成功提交到服务器，浏览器就会记住x→abc这个组合
+下次只要碰到网页中有name为x的input，都会提示出“abc” -->
+<div title="select">
+    select:<input name="search" />
+	<form>
+		<label>user:</label>
+		<input  name="useName" />
+		<fieldset>
+			<label>password:</label>
+			<input name="password" />
+		</fieldset>
+    </form>
+    id:<input name="none" /></br>
+    tel:<input name="none" />
+</div>
+
+<!-- <legend> -->
+<hr/>
+7:
+<form>
+  <fieldset>
+    <legend>健康信息</legend>
+    身高：<input type="text" />
+    体重：<input type="text" />
+  </fieldset>
+</form>
+
+<!-- <fieldset form="iceform"> -->
+<hr/>
+8:
+<form  id="iceform">你喜欢什么口味的冰激凌？
+<input type="text" name="icecream" /><br />
+<input type="submit" />
+</form>
+
+<p>下面的 fieldset 位于 form 元素之外，但仍然是表单的一部分。</p>
+<fieldset form="iceform">
+  <legend>Personalia:</legend>
+  Name: <input type="text" name="usrname"/><br />
+  Email: <input type="text" name="usrmail" /><br />
+  Date of birth: <input type="text" name="usrdate" />
+</fieldset>
+
+<!-- x.disabled = true; -->
+<hr/>
+9:
+<fieldset id="myFieldset" name="personalia">
+  Name: <input type="text" name="username"><br>
+  Email: <input type="text" name="usermail"><br>
+</fieldset>
+<p>点击按钮来禁用 fieldset。</p>
+<button onclick="myFunction1()">试一下</button>
+
+<!-- appendChild() -->
+<hr/>
+10:
+<p>点击按钮来创建包含文本的 FIELDSET 元素。</p>
+<button onclick="myFunction2()">试一下</button>
+
+<hr/>
+11:
+<!-- 
+HTML DOM 节点
+在 HTML DOM （文档对象模型）中，每个部分都是节点：
+    文档本身是文档节点
+    所有 HTML 元素是元素节点
+    所有 HTML 属性是属性节点
+    HTML 元素内的文本是文本节点
+    注释是注释节点
+ -->
+<!-- appendChild() 方法向节点添加最后一个子节点。 -->
+<ul id="myList">
+	<li>Coffee</li>
+	<li>Tea</li>
+</ul>
+<p id="demo">请点击按钮向列表中添加项目。</p>
+<button onclick="myFunction3()">亲自试一试</button>
+
+<!-- 您也可以使用 appendChild() 方法从一个元素向另一个元素中移动元素。 -->
+<hr/>
+12:
+<ul id="myList1">
+	<li>Coffee</li>
+	<li>Tea</li>
+</ul>
+<ul id="myList2">
+	<li>Water</li>
+	<li>Milk</li>
+</ul>
+
+<p id="demo">请点击按钮把项目从一个列表移动到另一个列表中。</p>
+<button onclick="myFunction4()">亲自试一试</button>
+
+<!-- insertBefore() 方法在您指定的已有子节点之前插入新的子节点。 -->
+<hr/>
+13:
+<ul id="myList_be">
+	<li>Coffee</li>
+	<li>Tea</li>
+</ul>
+<p id="demo">请点击按钮向列表插入一个项目。</p>
+<button onclick="myFunction5()">试一下</button>
+
+<!-- childNodes 属性返回节点的子节点集合，以 NodeList 对象。
+提示：您可以使用 length 属性来确定子节点的数量，然后您就能够遍历所有的子节点并提取您需要的信息。 -->
+<hr/>
+14:
+<p id="demo_childnodes">请点击按钮来获得 body 元素子节点的相关信息。</p>
+<button onclick="myFunction6()">试一下</button>
+<!-- 返回列表项的 previousSibling（前一个同胞节点） -->
+<!-- nextSibling 属性返回指定节点之后紧跟的节点，在相同的树层级中。 -->
+<hr/>
+15:
+<ul id="myList">
+<!-- <p>请尝试在两个 <li> 元素之间添加空格，结果将是 "undefined"。</p> -->
+	<li id="item1">Coffee</li><li id="item2">Tea</li>
+</ul>
+<p id="demo_pre_next"></p>
+<button onclick="myFunction7()">pre试一下</button>
+<button onclick="myFunction8()">next试一下</button>
+
+
+</body>
+<script type="text/javascript" src="js/outclassbox5.js"></script>
+</html>

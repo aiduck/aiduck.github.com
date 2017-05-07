@@ -1,0 +1,79 @@
+实验三学习心得体会
+1）看清实验题目要求，每个元素是text形式，还是image形式；
+2）如果在一个给定的背景div下在放置元素会比直接用几个小的div拼接出类似于一个背景div效果的差
+	使用背景div时会产生很多定位position互相影响的效果，并且背景div是有边框的从而使得我在放置里面的div大小的时候会超出边界，或者一样的div的大小不一样
+	<div id="div_ground">
+		<div id="content1" class="content1">公告</div>
+	    <div id="content1" class="content2">规则</div>
+	    <div id="content1" class="content3">论坛</div>
+	    <div id="content1" class="content3">安全</div>
+	    <div id="content1" class="content3">公益</div>
+	<!-- end id == content1 -->
+	  	<div id="content2"></div>
+	<!-- end id == content2 -->
+		<div id="content3"></div>
+	<!-- end id == content3 -->
+		<div id="content4"></div>
+	<!-- end id == content4 -->
+		<div id="content5"></div>
+	<!-- end id == content5 -->
+	</div>
+	<!-- end id == div_ground -->
+	如果我使用这样的结构就会避免许多定位的问题
+		<div >
+			<div >公告</div>
+			<div >规则</div>
+			<div >论坛</div>
+			<div >安全</div>
+			<div >公益</div>
+			<div></div>
+			<div ></div>
+		</div>
+		<div >
+			<img >
+			<div></div>
+			<div></div>
+			<img>
+			<img >
+			<img >
+		</div>
+		<div >
+			<div ></div>
+		</div>
+		<div >
+			<img >
+			<p ></p>
+		</div>
+3）在第一个div==content1中学会了（在背景div下的相对并列，一起浮动起来的div）
+	一：文本属性和字体属性的差别
+	比如font-size: 14px;
+		text-align: center;
+		line-height: 40px;
+	二：对于元素对象一旦浮动（float）起来，那么对于定位属性为absolute才会几个div重叠在一起，而一旦设置成relative几个div并不会有相会影响；
+4）在第二个div==content2中学会了（两个类似文本输入框div）
+	一：position==relative的相对定位是相对于当前div的直接父元素来定位的
+5）在第三个div==content3中学会了（多个并列的大小不一的div）
+	一：在这么多的div中我都是用了position==relative的属性，那么导致我在定位每一个div时都使用了top和left来绝对定位，这样带来的麻烦是，
+	我每次都要计算每个div的大小和每个div之间的间隔，并且导致有些需要正方形的div效果我并	不能实现。只是做到了看起来像，实际上是一个长方形； 
+   	二：这么多的div中我对于id的命名还是欠缺一些，所以导致我每个div的id都很长，也很杂乱。所以我应该多练习，html的编写。
+ 	比如#content5_top_right_smallred1
+5）在第五个div==content5中学会了（多个div嵌套）
+	一： 在这个中我任然使用了position== relative的属性，并且比上一个中嵌套的更多，使得我的div边框的显示都出现了问题，以及在右边最后一排的小红色正方形会比前面的小一些，
+	这也是因为我定义了背景div的原因，因为我每一个div都是会显示边框宽度，这个也是算在div本身的大小里面，那么会导致如果我都是一样大小的div时，最后一个会被挤到下一行中，那么只有我把最后一个div定义的小一些。
+	比如#content5_bottom {width: 19.8%;}
+	#content5_bottom_right{width: 19%;}
+
+
+新的实验三中改进之处
+1）	div的数量和嵌套量减少了；
+2）	新实验中命名规则改进了；
+3）	利用了图片直接替代了一些div的设置，并且使得图片的大小就是一样的，减少很多工作量；
+4）	在最外层的div中position==relative而在里面的嵌套利用了position==absolute和left，top来定位div，之前不能利用的原因是？？？
+可能是我背景div的定位，以及有一些外层div的定位没有利用position，这样就会杂乱无章，从而我自己也不清楚怎么样来定位了。所以以后利用position时要规范；
+5）	文字的显示不再利用div来设置，而是直接利用p标签来设置；那么会减少div的数量和嵌套
+
+
+ 
+
+
+

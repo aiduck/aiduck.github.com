@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>document</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link href="css/document.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head> 
+
+<!-- document Attribute -> cookie  -->
+<!-- <body onload="onloadCookie('register')"> -->
+   <!-- <a href="outclassbox7.html">referrer</a> -->
+   <!-- http://localhost:3000/document.html -->
+   <!-- <form name="myform">
+		用户名:<input type="text" name="username" /></br>
+		密码:<input type="password" name="userpwd" /></br>
+		保存时间:<select name="savetime">
+			<option value="1">一天</option>
+			<option value="7">一周</option>
+			<option value="30">一月</option>
+			<option value="-1">不保存</option>
+		</select></br>
+		<input type="button" value="注册测试" />
+		<input type="button" value="加载注册信息"/></br>
+		<input type="button" value="登陆测试"/>
+		<input type="button" value="加载登陆信息"/></br>
+	</form>
+	<div id="cookiediv">cookie信息显示位置</div>
+	</body>
+ -->
+<!-- ******************************************************************************************************************************* -->
+
+<!-- forms way ->  submit -->
+<!-- <form action="value">  value==URL 
+可能的值：
+    绝对 URL - 指向其他站点（比如 src="www.example.com/example.htm"）
+    相对 URL - 指向站点内的文件（比如 src="example.htm"）
+-->
+<!-- method 属性规定如何发送表单数据（表单数据发送到 action 属性所规定的页面）。
+
+表单数据可以作为 URL 变量（method="get"）或者 HTTP post （method="post"）的方式来发送。 -->
+<!-- 
+POST 还是 GET？
+    1.如果希望获得最佳表单传输性能，可以采用 GET 方法发送只有少数简短字段的小表单.一些服务器操作系统在处理可以立即传递给应用程序的命令行参数时，会限制其数目和长度，在这种情况下，对那些有许多字段或是很长的文本域的表单来说，就应该采用 POST 方法来发送。
+    2.如果你在编写服务器端的表单处理应用程序方面经验不足，应该选择 GET 方法。
+    3.如果安全性是个问题，那么我们建议选用 POST 方法。
+    4.如果想在表单之外调用服务器端的应用程序，而且包括向其传递参数的过程，就要采用GET方法，因为该方法允许把表单这样的参数包括进来作为 URL 的一部分。而另一方面，使用 POST 样式的应用程序却希望在 URL 后还能有一个来自浏览器额外的传输过程，其中传输的内容不能作为传统 <a> 标签的内容。
+ -->
+<!-- <body>
+<form name="myform_two" accept="http://www.baidu.com" method="post" onsubmit="return checkForm()">
+ 	用户名:<input type="text" name="user_name"/><br/>
+	密码:<input type="password" name="user_pwd"/><br/>
+	邮箱:<input type="text" name="user_email"/><br/>
+	手机号:<input type="text" name="user_phone"/><br/>
+	<input type="submit" value="submit提交"/>
+	<input type="button" value="button提交" onclick="checkForm1()" /><br/>
+</form>
+</body> -->
+<!-- ******************************************************************************************************************************* -->
+
+<!-- table -->
+<!-- id can't paixu -->
+<body>
+	<table id="mytable" border="1" width="200">
+		<tr>
+			<th>ID</th>
+			<th>姓名</th>
+			<th>删除</th>
+		</tr>
+		<tr>
+			<td class="id">1</td>
+			<td>admin</td>
+			<td><input type="button" value="删除"/></td>
+		</tr>
+		<tr>
+			<td class="id">2</td>
+			<td>郭永全</td>
+			<td><input type="button" value="删除"/></td>
+		</tr>
+		<tr>
+			<td class="id">3</td>
+			<td>郑建华</td>
+			<td><input type="button" value="删除"/></td>
+		</tr>
+	</table>
+	ID:   <input id="id_text" type="text"/><br/>
+	姓名:  <input id="name_text" type="text"/><br/>
+	<input id="button" type="button" value="头部添加一行"/>
+	<input id="button" type="button" value="尾部追加一行"/><br/>
+	<input id="button" type="button" value="添加表头"/>
+	<input id="button" type="button" value="隐藏表头"/><br/>	
+</body>
+<!-- ******************************************************************************************************************************* -->
+
+<script type="text/javascript" src="js/document.js"></script>
+</html>

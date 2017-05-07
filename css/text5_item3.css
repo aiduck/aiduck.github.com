@@ -1,0 +1,37 @@
+.ui-grid-row {
+	display: flex;
+	width: 500px;
+	height: 30px;
+	border: 2px solid #2d2d2d;
+	margin-top: 10px;
+	font-size: 18px;
+}
+.ui-grid-2 {
+	/*position: absolute;*/
+	width: 50px;
+	height: 30px;
+	border-right: 2px solid #2d2d2d;
+	text-align: center;
+    line-height: 30px;
+}
+.ui-grid-10 {
+    /*position: absolute;*/
+    width: 370px;
+    height: 30px;
+    border-right: 2px solid #2d2d2d;
+}
+.ui-grid-3 {
+	width: 96px;
+	height: 30px;
+	text-align: center;
+    line-height: 30px;
+}
+.button {
+	position: relative;
+	left: 410px;
+	top: 20px;
+	width: 100px;
+	height: 30px;
+	background-color: #339966;
+	color: #fff;
+}
